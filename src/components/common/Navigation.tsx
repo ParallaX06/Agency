@@ -15,7 +15,7 @@ export function Navigation() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-bg-primary/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-[#030303]/40 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] supports-[backdrop-filter]:bg-[#030303]/30 transition-all duration-300">
       <nav className="section-shell flex h-20 items-center justify-between px-4 md:px-8">
         <Link href="/" className="flex items-center gap-3 font-display text-xl font-semibold tracking-tight text-text-primary">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-text-primary/70 text-xs text-text-primary">
