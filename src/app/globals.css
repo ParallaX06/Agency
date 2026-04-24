@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg-primary: #030303;
-  --color-bg-secondary: #0a0a0a;
-  --color-bg-tertiary: #141414;
+  --color-bg-primary: #05000A;
+  --color-bg-secondary: #0A0014;
+  --color-bg-tertiary: #110022;
 
   --color-text-primary: #ffffff;
-  --color-text-secondary: #a3a3a3;
-  --color-text-tertiary: #737373;
+  --color-text-secondary: #7B3AFF;
+  --color-text-tertiary: #4400CC;
 
-  --color-border: #1f1f1f;
+  --color-border: #1A0066;
 
   --font-display: var(--font-space);
   --font-body: var(--font-space);
@@ -24,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background: #030303;
+  background: #05000A;
   color: #ffffff;
 }
 

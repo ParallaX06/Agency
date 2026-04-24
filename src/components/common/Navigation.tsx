@@ -15,16 +15,16 @@ export function Navigation() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-[#030303]/40 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] supports-[backdrop-filter]:bg-[#030303]/30 transition-all duration-300">
-      <nav className="section-shell flex h-20 items-center justify-between px-4 md:px-8">
-        <Link href="/" className="flex items-center gap-3 font-display text-xl font-semibold tracking-tight text-text-primary">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-text-primary/70 text-xs text-text-primary">
+    <header className="sticky top-4 z-50 px-4 md:px-6">
+      <nav className="section-shell mx-auto flex h-16 max-w-6xl items-center justify-between rounded-full border border-[#D8B4FE]/20 bg-[#05000A]/70 px-4 shadow-[0_18px_45px_rgba(21,8,40,0.45)] backdrop-blur-2xl supports-[backdrop-filter]:bg-[#05000A]/60 md:h-18 md:px-6">
+        <Link href="/" className="flex items-center gap-3 font-display text-lg font-semibold tracking-tight text-text-primary md:text-xl">
+          <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-[#D8B4FE]/35 text-[10px] text-text-primary md:h-8 md:w-8 md:text-xs">
             AF
           </span>
           1ne Click Media
         </Link>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-6 md:flex lg:gap-8">
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href} className="text-sm font-medium text-text-secondary transition hover:text-text-primary">
@@ -44,7 +44,7 @@ export function Navigation() {
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen((prev) => !prev)}
-          className="rounded-md border border-border px-3 py-2 text-sm text-text-primary md:hidden"
+          className="rounded-full border border-[#D8B4FE]/20 bg-white/5 px-4 py-2 text-sm text-text-primary backdrop-blur-md md:hidden"
         >
           {open ? "Close" : "Menu"}
         </button>
@@ -55,7 +55,7 @@ export function Navigation() {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
-          className="border-t border-border bg-bg-secondary px-4 py-4 md:hidden"
+          className="mx-auto mt-3 max-w-6xl rounded-3xl border border-[#D8B4FE]/20 bg-[#0A0014]/90 px-4 py-4 shadow-[0_18px_45px_rgba(21,8,40,0.35)] backdrop-blur-2xl md:hidden"
         >
           <ul className="grid gap-3">
             {links.map((link) => (
